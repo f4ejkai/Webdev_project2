@@ -21,27 +21,33 @@ footer {
   padding-left: 15px;
   padding-right: 15px;
 }
-#st-box {
+#left-box {
   float: left;
   width: 365px;
   height: 320px;
   background-color: white;
   border: solid black;
+  flex-wrap: wrap;
+  overflow: auto;
 }
-#nd-box {
+#mid-box {
   float: left;
   width: 365px;
   height: 320px;
   background-color: white;
   border: solid black;
   margin-left: 20px;
+  flex-wrap: wrap;
+  overflow: auto;
 }
-#rd-box {
+#right-box {
   float: right;
   width: 365px;
   height: 320px;
   background-color: white;
   border: solid black;
+  flex-wrap: wrap;
+  overflow: auto;
 }
 
 .button {
