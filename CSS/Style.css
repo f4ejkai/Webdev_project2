@@ -1,58 +1,57 @@
 body {
-    background-size: 100%;
-    background-repeat:no-repeat;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 footer {
-            background: transparent;
-            position: absolute;
-            margin-bottom: 700px;
-            height: 40px;
-            line-height: 40px;
-            width: 100%;
-            color:orange;
-        }
-
+  background: transparent;
+  position: absolute;
+  margin-bottom: 700px;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  color: orange;
+}
 
 .container {
-            width:1600px;
-            height:350px;
-            background-color:transparent;
-            padding-top:20px;
-            padding-left:15px;
-            padding-right:15px;
-        }
-        #st-box {
-            float:left;
-            width:365px;
-            height:320px;
-            background-color:white;
-            border:solid black;
-        }
-        #nd-box {
-            float:left;
-            width:365px;
-            height:320px;
-            background-color:white;
-            border:solid black;
-            margin-left:20px;
-        }
-        #rd-box {
-            float:right;
-            width:365px;
-            height:320px;
-            background-color:white;
-            border:solid black;
-        }
+  width: 1600px;
+  height: 350px;
+  background-color: transparent;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#st-box {
+  float: left;
+  width: 365px;
+  height: 320px;
+  background-color: white;
+  border: solid black;
+}
+#nd-box {
+  float: left;
+  width: 365px;
+  height: 320px;
+  background-color: white;
+  border: solid black;
+  margin-left: 20px;
+}
+#rd-box {
+  float: right;
+  width: 365px;
+  height: 320px;
+  background-color: white;
+  border: solid black;
+}
 
-    .button {
-        margin-top: 50px;
-    background-color: cornflowerblue;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+.button {
+  margin-top: 50px;
+  background-color: cornflowerblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
