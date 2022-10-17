@@ -111,6 +111,7 @@ background-attachment:fixed;
 	margin: 0;
 }
 .container {
+
 }
 
 .test_box {
@@ -130,7 +131,7 @@ background-attachment:fixed;
 	-ms-flex-align: center;
 	align-items: center;
 	background-color: rgba(0,0,0,.1);
-	color: #fff;
+	color: transparent;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -143,8 +144,9 @@ background-attachment:fixed;
 	transition: all 300ms ease;
 }
 .test_box .inner .test_click:hover {
-	background-color: rgba(0,0,0,.5); 
+	background-color: rgba(0,0,0,.75); 
 	mix-blend-mode: hard-light;
+  color: white;
 }
 .flex_this {
 	-webkit-align-content: center;
@@ -159,6 +161,10 @@ background-attachment:fixed;
 	transition: all 300ms ease;
 	width: 100%;
 }
+
+.flex_this:hover{
+
+}
 .test_box .inner .test_click:hover .flex_this {
 	margin-top: -5px;
 }
@@ -168,9 +174,21 @@ background-attachment:fixed;
 	font-weight: 700;
 	margin: 0 0 20px;
 	width: 100%;
+  font-size: 20px;
 }
 .test_link {
-	border: 2px solid #fff;
+	border: 2px solid transparent;
+	display: inline-block;
+	font-size: .8em;
+	font-weight: 700;
+	letter-spacing: .1em;
+	margin: 0 auto;
+	padding: 10px 30px;
+	text-transform: uppercase;
+}
+
+.test_link:hover{
+  border: 2px solid white;
 	display: inline-block;
 	font-size: .8em;
 	font-weight: 700;
@@ -181,25 +199,25 @@ background-attachment:fixed;
 }
 
 .box-01 .inner {
-	background-image: url('https://picsum.photos/1024/768?image=1033');
+	background-image: url(/Images/work_1.jpg);
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .box-02 .inner {
-	background-image: url('https://picsum.photos/1024/768?image=967');
+	background-image: url(/Images/work_2.jpg);
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .box-03 .inner {
-	background-image: url('https://picsum.photos/1024/768?image=924');
+	background-image: url(/Images/work_3.jpg);
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .box-04 .inner {
-	background-image: url('https://picsum.photos/1024/768?image=1073');
+	background-image: url(/Images/work_4.jpg);
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -253,3 +271,4 @@ background-attachment:fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
