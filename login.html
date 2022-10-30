@@ -4,7 +4,7 @@
 
   <title>Bay Area Car Spotting Guide</title>
 
-  <link rel="stylesheet" href="/General-Locations/General-Locations-CSS/Style.css" />
+  <link rel="stylesheet" href="CSS/style_signup_login.css" />
 
   <link
     rel="stylesheet"
@@ -59,54 +59,35 @@
             </ul>
           </li>
   
-          <li><a href="/FAQ/FAQ2.html">FAQ</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              FAQ
+            </a>
+          </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  
+
   <header>
-    <div style="text-align: center"><h1 class="pagetitle">Peninsula Locations</h1></div>
+    <div style="text-align: center"><h1 class="pagetitle">Login</h1></div>
   </header>
 
-  <div class="row">
-    <div class="container">
-      <div class="test_box box-07 col-xs-6 col-md-4">
-        <div class="inner">
-          <a href="/Precise-Locations/Precise-Locations-HTML/HWY1.html" class="test_click">
-            <div class="flex_this">
-              <h1 class="test_title">California Highway One</h1>
-              <span class="test_link">Click Here</span>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="test_box box-08 col-xs-6 col-md-4">
-        <div class="inner">
-          <a href="/Precise-Locations/Precise-Locations-HTML/sanfrancisco.html" class="test_click">
-            <div class="flex_this">
-              <h1 class="test_title">San Francisco</h1>
-              <span class="test_link">Click Here</span>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="test_box box-09 col-xs-6 col-md-4">
-        <div class="inner">
-          <a href="/Precise-Locations/Precise-Locations-HTML/skyline.html" class="test_click">
-            <div class="flex_this">
-              <h1 class="test_title">Skyline Boulevard</h1>
-              <span class="test_link">Click Here</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <form action="/login" method="post"> 
+    <input type="text" name="name" id="name" placeholder="name" required>
+    <br>
+    <br>
+    <input type="password" name="password" id="password" placeholder="password" required>
+    <br>
+    <br>
+    <input type="submit" name="submit" id="submit" value="submit">
+
+  </form>
+  
 </body>
 
 <footer>

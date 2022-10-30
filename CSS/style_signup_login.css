@@ -1,0 +1,120 @@
+/*body {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+footer {
+  background: transparent;
+  position: absolute;
+  margin-bottom: 700px;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+}*/
+
+/*.container {
+  width: 1600px;
+  height: 350px;
+  background-color: transparent;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#left-box {
+  float: left;
+  width: 365px;
+  height: 320px;
+  background-color: white;
+  border: solid black;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+#mid-box {
+  float: left;
+  width: 365px;
+  height: 320px;
+  background-color: white;
+  border: solid black;
+  margin-left: 20px;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+#right-box {
+  float: right;
+  width: 365px;
+  height: 320px;
+  background-color: white;
+  border: solid black;
+  flex-wrap: wrap;
+  overflow: auto;
+}*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
+body {
+  color: #fff;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 140%;
+  margin: auto;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient( rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75) ), url('/Images/Backgrounds/background7.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  position: fixed;
+}
+
+
+
+
+/*.footer {
+  overflow: hidden;
+  position: fixed;
+  left: auto;
+  right: auto;
+  bottom: 0;
+  color: white;
+  text-align: center;
+}*/
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+  position: fixed;
+}
+
+.body {
+  padding-bottom: 20px;
+}
+
+.pagetitle{
+  margin-top: 75px;
+}
+
+form{
+  margin-top: 200px;
+}
+
+.header{
+  position: fixed;
+}

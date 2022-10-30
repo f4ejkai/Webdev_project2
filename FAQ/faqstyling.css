@@ -1,0 +1,149 @@
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
+body {
+  color: #fff;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 140%;
+  margin: auto;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient( rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75) ), url('/Images/Backgrounds/background7.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+
+/*.footer {
+  overflow: hidden;
+  position: fixed;
+  left: auto;
+  right: auto;
+  bottom: 0;
+  color: white;
+  text-align: center;
+}*/
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+  position: fixed;
+}
+
+.body {
+  padding-bottom: 20px;
+}
+
+.pagetitle{
+  margin-top: 75px;
+}
+
+form{
+  margin-top: 200px;
+}
+
+.header{
+  position: fixed;
+}
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.wrapper {
+  width: 60%;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.container {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+  margin: 20px 0;
+}
+
+.question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px 80px 20px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.question::after {
+  content: "\002B";
+  font-size: 2.2rem;
+  position: absolute;
+  right: 20px;
+  transition: 0.2s;
+}
+
+.question.active::after {
+  transform: rotate(45deg);
+}
+
+.answercont {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.answer {
+  padding: 0 20px 20px;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 790px){
+  html {
+    font-size: 14px;
+  }
+  .wrapper {
+  width: 80%;
+}
+}
