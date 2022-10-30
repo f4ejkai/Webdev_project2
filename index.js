@@ -1,6 +1,7 @@
 const {MongoClient, Collection} = require("mongodb")
 const bodyParser = require("body-parser")
-
+require("dotenv").config()
+const fs = require("fs")
 const express = require("express")
 const app = express()
 app.listen(3000,()=>{
@@ -10,12 +11,15 @@ app.use(express.static(__dirname))
 app.get("/",(req,res)=>{
     res.sendFile(__dirname + "/index.html") 
 })
-
+app.get("/loggedin", (req,res)=>{
+    /*document.getElementById("name").innerHTML = foundUser.name*/
+    res.sendFile(__dirname + "/loggedin.html")
+})
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
     extended:true
 }))
-const uri = "mongodb+srv://user:fmQivMoPHSFLKKqu@cluster0.lwe1xbp.mongodb.net/?retryWrites=true&w=majority"
+const uri = `mongodb+srv://user:${process.env.PASSWORD}@cluster0.lwe1xbp.mongodb.net/?retryWrites=true&w=majority`
 const client = new MongoClient(uri)
 app.post("/signup",function(req, res){
     const name = req.body.name
@@ -34,6 +38,7 @@ app.post("/signup",function(req, res){
         })
     })
     return res.redirect("/")
+
 })
 
 app.post("/login", function(req, res){
@@ -50,7 +55,13 @@ app.post("/login", function(req, res){
             if (!err){
                 if (foundUser){
                     if(foundUser.password === password){
-                        res.send("Logged In")
+                        /*res.sendFile(__dirname + "/loggedin.html")*/
+                        res.redirect("/loggedin")
+                        fs.appendFile(".env", "NAME=foundUser.name", function (err) {
+                            if(err) throw err
+                            console.log("updated")
+                        })
+                        /*console.log(foundUser.name)*/
                     }
                     else {
                         res.send("Invalid Password")
