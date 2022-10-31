@@ -42,39 +42,39 @@ app.post("/signup",function(req, res){
 })
 
 
-// app.post("/addBookmark", function(req, res){
-//     const name = "Joe"
-//     const bookmarks = [1,2]
-//     const data = {
-//         "name":name,
-//         // "password":password,
-//         "bookMarks":bookmarks
-//     };
+app.post("/addBookmark", function(req, res){
+    const name = "Joe"
+    const bookmarks = [1,2]
+    const data = {
+        "name":name,
+        // "password":password,
+        "bookMarks":bookmarks
+    };
 
 
-//     MongoClient.connect(uri, function(err, db){
-//         if (err) throw err
-//         const dbo = db.db("mydb")
-//         console.log("Testing")
-//         dbo.collection("Users").findOne({name:name},function(err, foundUser){
-//             if (!err){
-//                 if (foundUser){
-//                     const dbo = db.db("mydb");
-//                     dbo.collection("Users").updateOne(name,data,function(err, res){
-//                         if (err) throw err
-//                         console.log("error adding bookmarks")
-//                         db.close()
-//                     })
-//                 }
-//                 else {
-//                     res.send("Username Not Found")
-//                 }
-//             }
-//             db.close();
-//         })
-//     })
-//     /*return res.redirect("/")*/
-// });
+    MongoClient.connect(uri, function(err, db){
+        if (err) throw err
+        const dbo = db.db("mydb")
+        console.log("Testing")
+        dbo.collection("Users").findOne({name:name},function(err, foundUser){
+            if (!err){
+                if (foundUser){
+                    const dbo = db.db("mydb");
+                    dbo.collection("Users").updateOne(name,data,function(err, res){
+                        if (err) throw err
+                        console.log("error adding bookmarks")
+                        db.close()
+                    })
+                }
+                else {
+                    res.send("Username Not Found")
+                }
+            }
+            db.close();
+        })
+    })
+    /*return res.redirect("/")*/
+});
 
 
 
