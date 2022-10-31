@@ -245,7 +245,10 @@
   console.log(locationArray);
 
   function handleSubmit() {
-    fetch("/addBookmark");
+    fetch("addBookmark", {
+      method: "POST",
+      body: JSON.stringify({ bookmarks: [1, 2] }),
+    });
   }
 </script>
 <footer>

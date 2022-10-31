@@ -1,5 +1,6 @@
 const {MongoClient, Collection} = require("mongodb")
 const bodyParser = require("body-parser")
+const cors = require("cors")
 require("dotenv").config()
 const fs = require("fs")
 const express = require("express")
@@ -18,6 +19,9 @@ app.get("/loggedin", (req,res)=>{
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
     extended:true
+}))
+app.use(cors({
+    origin: '*'
 }))
 const uri = `mongodb+srv://user:${process.env.PASSWORD}@cluster0.lwe1xbp.mongodb.net/?retryWrites=true&w=majority`
 const client = new MongoClient(uri)
@@ -51,6 +55,7 @@ app.post("/addBookmark", function(req, res){
         "bookMarks":bookmarks
     };
 
+    console.log(data)
 
     MongoClient.connect(uri, function(err, db){
         if (err) throw err
@@ -78,7 +83,7 @@ app.post("/addBookmark", function(req, res){
 
 
 
-app.post("/login", function(req, res){
+app.post("/login",cors(), function(req, res){
     const name = req.body.name
     const password = req.body.password
     const data = {
