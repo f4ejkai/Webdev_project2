@@ -108,7 +108,7 @@
     <div id="location-container" class="container"></div>
     <!-- Test end -->
     <div class="button">
-      <div onclick="handleSubmit">Submit</div>
+      <button onclick="handleSubmit()">Submit</button>
     </div>
   </div>
 </body>
@@ -243,6 +243,10 @@
   locationContainer.appendChild(locationDiv);
   console.log(locationContainer);
   console.log(locationArray);
+
+  function handleSubmit() {
+    fetch("/addBookmark");
+  }
 </script>
 <footer>
   <div class="footer">Copyright © 2022 Bay Area Car Spotting Guide</div>
