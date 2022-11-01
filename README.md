@@ -22,7 +22,7 @@ Click [here]() to visit the website.
 
 ## Visual Overview
 
-Click [here]() to view a Google Slides summary of the project.
+Click [here](https://docs.google.com/presentation/d/1irUpc7DkpUP05iKAfVCJ2aqsSU5S6XPoZ-qLg50W1A0/edit?usp=sharing) to view a Google Slides summary of the project.
 
 A short but in-depth video where the author speaks on the different features of the website.
 
