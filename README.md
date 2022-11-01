@@ -20,7 +20,7 @@ This project was created as a requirement for the course CS5610 taught by John A
 
 Click [here]() to visit the website.
 
-## Overview
+## Visual Overview
 
 Click [here]() to view a Google Slides summary of the project.
 
