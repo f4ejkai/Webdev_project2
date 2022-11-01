@@ -1,4 +1,4 @@
-// Sourced from online template
+// Sourced from online template this adds styling and functionality to the precise locations page.
 (function () {
   "use strict";
 
