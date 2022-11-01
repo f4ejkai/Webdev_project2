@@ -26,7 +26,7 @@ Click [here]() to view a Google Slides summary of the project.
 
 A short but in-depth video where the author speaks on the different features of the website.
 
-[![Project 3 Overview Video]()]()
+[![Project 2 Overview Video]()]()
 
 ## Contributing
 
