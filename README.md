@@ -1,4 +1,4 @@
-# project1.github.io
+# CS5610 PROJECT 2
 
 ## Author
 
