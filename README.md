@@ -2,7 +2,7 @@
 
 ## Author
 
-Elio Khouri
+Elio Khouri\
 
 Rongchang Wang
 
