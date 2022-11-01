@@ -4,7 +4,7 @@
 
   <title>Bay Area Car Spotting Guide</title>
 
-  <link rel="stylesheet" href="CSS/Style.css" />
+  <link rel="stylesheet" href="/CSS/style_signup_login.css" />
 
   <link
     rel="stylesheet"
@@ -99,158 +99,20 @@
 
   <header>
     <div style="text-align: center">
-      <h1 class="pagetitle">All Locations</h1>
+      <h1 class="pagetitle">Bookmarks</h1>
     </div>
   </header>
 
   <div class="row">
-    <!-- Test -->
     <div id="location-container" class="container"></div>
-    <!-- Test end -->
     <div class="button">
       <button onclick="handleSubmit()">Submit</button>
     </div>
   </div>
 </body>
 
-<script>
-  const locationArray = [
-    {
-      title: "California Highway Nine",
-      sublocation: "South Bay",
-      key: "1",
-      checked: false,
-    },
-    {
-      title: "Los Gatos",
-      sublocation: "South Bay",
-      key: "2",
-      checked: false,
-    },
-    {
-      title: "Santana Row",
-      sublocation: "South Bay",
-      key: "3",
-      checked: false,
-    },
-    {
-      title: "Golden Gate",
-      sublocation: "North Bay",
-      key: "4",
-      checked: false,
-    },
-    {
-      title: "Marin",
-      sublocation: "North Bay",
-      key: "5",
-      checked: false,
-    },
-    {
-      title: "Sonoma",
-      sublocation: "North Bay",
-      key: "6",
-      checked: false,
-    },
-    {
-      title: "California Highway One",
-      sublocation: "Peninsula",
-      key: "7",
-      checked: false,
-    },
-    {
-      title: "San Francisco",
-      sublocation: "Peninsula",
-      key: "8",
-      checked: false,
-    },
-    {
-      title: "Skyline Boulevard",
-      sublocation: "Peninsula",
-      key: "9",
-      checked: false,
-    },
-    {
-      title: "Alameda",
-      sublocation: "EastBay",
-      key: "10",
-      checked: false,
-    },
-    {
-      title: "Automall Fremont",
-      sublocation: "EastBay",
-      key: "11",
-      checked: false,
-    },
-    {
-      title: "Walnut Creek",
-      sublocation: "EastBay",
-      key: "12",
-      checked: false,
-    },
-  ];
+<script src="/bookmarks.js"></script>
 
-  // Location container div
-  const locationDiv = document.createElement("div");
-  locationDiv.id = locationArray[0].key;
-  locationDiv.className = "container";
-
-  // // Location inner div
-  const locationInner = document.createElement("ul");
-  locationInnerclassName = "listContainer";
-  locationDiv.appendChild(locationInner);
-
-  locationArray.map((item) => {
-    const listItem = document.createElement("li");
-    listItem.className = `listItems ${item.key}`;
-    listItem.id = item.key;
-    const checkBox = document.createElement("input");
-    checkBox.type = "checkBox";
-    checkBox.id = item.key;
-    checkBox.name = item.title;
-    checkBox.checked = item.checked;
-    listItem.appendChild(checkBox);
-
-    const span = document.createElement("span");
-    span.innerHTML = item.title;
-    listItem.appendChild(span);
-
-    // listItem.innerHTML = item.title;
-    locationInner.appendChild(listItem);
-  });
-
-  // // A tag
-  // const imageATag = document.createElement("a");
-  // imageATag.href = locationArray[0].href;
-  // imageATag.className = "test_click";
-  // locationInner.appendChild(imageATag);
-
-  // //flex tag
-  // const flexDiv = document.createElement("div");
-  // flexDiv.className = "flex-this";
-  // imageATag.appendChild(flexDiv);
-
-  // const h1Tag = document.createElement("h1");
-  // h1Tag.className = "test_title";
-  // h1Tag.innerHTML = locationArray[0].title;
-  // flexDiv.appendChild(h1Tag);
-
-  // const spanTag = document.createElement("span");
-  // spanTag.className = "test_link";
-  // spanTag.innerHTML = "Click Here";
-  // flexDiv.appendChild(spanTag);
-
-  const locationContainer = document.getElementById("location-container");
-  locationContainer.appendChild(locationDiv);
-  console.log(locationContainer);
-  console.log(locationArray);
-
-  function handleSubmit() {
-    fetch("addBookmark", {
-      method: "POST",
-      body: JSON.stringify({ bookmarks: [1, 2] }),
-    });
-  }
-</script>
 <footer>
   <div class="footer">Copyright © 2022 Bay Area Car Spotting Guide</div>
 </footer>

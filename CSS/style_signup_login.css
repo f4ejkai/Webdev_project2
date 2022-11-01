@@ -70,7 +70,11 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: linear-gradient( rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75) ), url('/Images/Backgrounds/background7.jpg');
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url("/Images/Backgrounds/background7.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -78,9 +82,6 @@ body {
   background-attachment: fixed;
   position: fixed;
 }
-
-
-
 
 /*.footer {
   overflow: hidden;
@@ -107,14 +108,18 @@ body {
   padding-bottom: 20px;
 }
 
-.pagetitle{
+.pagetitle {
   margin-top: 75px;
 }
 
-form{
+form {
   margin-top: 200px;
 }
 
-.header{
+.header {
   position: fixed;
+}
+
+.ul {
+  list-style-type: none;
 }

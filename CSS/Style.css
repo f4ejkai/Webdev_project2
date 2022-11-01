@@ -18,7 +18,11 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: linear-gradient( rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75) ), url('/Images/Backgrounds/background7.jpg');
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url("/Images/Backgrounds/background7.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -118,56 +122,56 @@ body {
 }
 
 .box-01 .inner {
-  background-image: url(/Images/Grid/work_1.jpg);
+  background-image: url("/Images/Grid/work_1.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .box-02 .inner {
-  background-image: url(/Images/Grid/Work_10.jpg);
+  background-image: url("/Images/Grid/Work_10.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .box-03 .inner {
-  background-image: url(/Images/);
+  background-image: url("/Images/Grid/srmainstreet.jpeg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .box-04 .inner {
-  background-image: url(/Images/work_4.jpg);
+  background-image: url("/Images/Grid/fortpoint.jpeg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .box-05 .inner {
-  background-image: url("");
+  background-image: url("/Images/Grid/ferrarisf.jpeg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .box-06 .inner {
-  background-image: url("");
+  background-image: url("/Images/Grid/sonoma2.JPG");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .box-07 .inner {
-  background-image: url("");
+  background-image: url("/Images/Grid/bixby.jpeg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .box-08 .inner {
-  background-image: url("");
+  background-image: url("/Images/Grid/brisbanesf.jpeg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .box-09 .inner {
-  background-image: url("");
+  background-image: url("/Images/Grid/skyline1.jpeg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -215,6 +219,6 @@ body {
   padding-bottom: 20px;
 }
 
-.pagetitle{
+.pagetitle {
   margin-top: 75px;
 }
