@@ -1,4 +1,4 @@
 node_modules
 .env
 .DS_Store
-webdev_project2/project2-design-doc.docx
+*.project2-design-doc.docx
