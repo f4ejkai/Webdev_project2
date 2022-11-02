@@ -18,7 +18,7 @@ This project was created as a requirement for the course CS5610 taught by John A
 
 ## Demo
 
-Click [here]() to visit the website.
+Click [here](https://bay-area-car-spotting-guide.vercel.app/index.html) to visit the website.
 
 ## Visual Overview
 
