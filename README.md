@@ -26,7 +26,7 @@ Click [here](https://docs.google.com/presentation/d/1irUpc7DkpUP05iKAfVCJ2aqsSU5
 
 A short but in-depth video where the author speaks on the different features of the website.
 
-[![Project 2 Overview Video]()](https://youtu.be/eeZL2iwy0uk)
+[![Project 2 Overview Video](https://raw.githubusercontent.com/f4ejkai/Webdev_project2/main/Images/Thumbnails/youtubethumbnail.jpeg)](https://youtu.be/eeZL2iwy0uk)
 
 ## Contributing
 
