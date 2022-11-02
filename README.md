@@ -8,7 +8,7 @@ Rongchang Wang
 
 ## Objective
 
-Hello, we are Elio Khouri and Rongchang Wang, aside from being developers we are car enthusiasts.
+Hello, we are Elio Khouri and Rongchang Wang, aside from being developers we are also car enthusiasts.
 
 We decided to create a simple front end webiste that showcases car spots from all over the Bay Area, there is also a simple backend connection to our database that allows users to create and account and toggle bookmarks on and off.
 
