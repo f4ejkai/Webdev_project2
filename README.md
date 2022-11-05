@@ -28,7 +28,7 @@ Click [here](https://bay-area-car-spotting-guide.vercel.app/index.html) to visit
 
    [![Project 2 Overview Video](https://raw.githubusercontent.com/f4ejkai/Webdev_project2/main/Images/Thumbnails/youtubethumbnail.jpeg)](https://youtu.be/eeZL2iwy0uk)
 
-3. Finally click [here](https://github.com/f4ejkai/Webdev_project2/blob/main/project2-design-doc.docx) to view the design documentation of the project.
+3. Finally click [here](https://github.com/f4ejkai/Webdev_project2/blob/main/project2-design-doc.docx?raw=true) to view the design documentation of the project.
 
 ## Contributing
 
