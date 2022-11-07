@@ -11,7 +11,7 @@ body {
   text-align: center;
   width: 100%;
 }
-
+<- there are two body tag in one CSS file, suppose to be one. ->
 html,
 body {
   height: 100%;
