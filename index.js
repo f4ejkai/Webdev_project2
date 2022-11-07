@@ -39,7 +39,7 @@ app.use(
     origin: "*",
   })
 );
-
+<!-- recommend to divide the code into DB files and app.js, which makes others more easily to review and maintain -->
 const uri = `mongodb+srv://user:${process.env.PASSWORD}@cluster0.lwe1xbp.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri);
 app.post("/signup", function (req, res) {
